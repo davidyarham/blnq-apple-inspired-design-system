@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style data-blnq="design-tokens">:root {
+  --color-primary: #0071E3;
+  --color-accent: #1D1D1F;
+  --color-neutral: #F5F5F7;
+  --spacing-xs: 8px;
+  --spacing-sm: 12px;
+  --spacing-md: 22px;
+  --spacing-lg: 40px;
+  --spacing-xl: 80px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 18px;
+  --radius-pill: 980px;
+  --type-h1-font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+  --type-h1-font-size: 3.5rem;
+  --type-h2-font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Display', 'Helvetica Neue', sans-serif;
+  --type-h2-font-size: 2.5rem;
+  --type-h3-font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+  --type-h3-font-size: 1.5rem;
+  --type-body-font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+  --type-body-font-size: 1.0625rem;
+  --type-caption-font-family: -apple-system, BlinkMacSystemFont, 'SF Pro Text', 'Helvetica Neue', sans-serif;
+  --type-caption-font-size: 0.875rem;
+}</style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lumen — A new way to see</title>
+  <link rel="stylesheet" href="/css/styles.css" />
+  <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+</head>
+<body>
+  <header class="nav" id="nav">
+    <div class="nav__inner">
+      <a href="#" class="nav__logo" aria-label="Lumen home">
+        <i data-lucide="aperture"></i>
+        <span>Lumen</span>
+      </a>
+      <nav class="nav__links" aria-label="Primary">
+        <a href="#overview">Overview</a>
+        <a href="#display">Display</a>
+        <a href="#camera">Camera</a>
+        <a href="#specs">Specs</a>
+      </nav>
+      <a href="#buy" class="btn btn--pill nav__cta">Buy</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="overview">
+      <div class="hero__content reveal">
+        <p class="hero__eyebrow">Introducing Lumen Pro</p>
+        <h1 class="hero__title">A new way to see.</h1>
+        <p class="hero__sub">The brightest display we&rsquo;ve ever built, a camera that thinks in light, and a battery that simply doesn&rsquo;t quit.</p>
+        <div class="hero__actions">
+          <a href="#buy" class="btn btn--pill btn--primary">Buy from $1,299</a>
+          <a href="#display" class="link link--arrow">Watch the film <i data-lucide="play"></i></a>
+        </div>
+      </div>
+      <div class="hero__device reveal" aria-hidden="true">
+        <div class="device">
+          <div class="device__screen"></div>
+          <div class="device__glow"></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="band" id="display">
+      <div class="band__inner reveal">
+        <p class="section-eyebrow">Display</p>
+        <h2 class="section-title">Every pixel, perfected.</h2>
+        <p class="section-lede">A 6.7&Prime; Liquid Retina XDR panel with 2,000 nits of peak brightness and ProMotion that flows at 120Hz. Color so true it disappears.</p>
+      </div>
+      <div class="stat-row reveal">
+        <div class="stat">
+          <span class="stat__num">2,000</span>
+          <span class="stat__label">nits peak brightness</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">120<span class="stat__unit">Hz</span></span>
+          <span class="stat__label">ProMotion refresh</span>
+        </div>
+        <div class="stat">
+          <span class="stat__num">1<span class="stat__unit">B</span></span>
+          <span class="stat__label">colors, calibrated</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="features" id="camera">
+      <div class="features__head reveal">
+        <p class="section-eyebrow">Camera</p>
+        <h2 class="section-title">It thinks in light.</h2>
+      </div>
+      <div class="features__grid">
+        <article class="card reveal">
+          <div class="card__icon"><i data-lucide="camera"></i></div>
+          <h3 class="card__title">48MP Main</h3>
+          <p class="card__body">A quad-pixel sensor captures four times the detail, then chooses the perfect exposure for you.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon"><i data-lucide="moon"></i></div>
+          <h3 class="card__title">Night mode</h3>
+          <p class="card__body">See what your eyes can&rsquo;t. Lumen gathers light across frames for clean, bright low-light shots.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon"><i data-lucide="focus"></i></div>
+          <h3 class="card__title">Cinematic</h3>
+          <p class="card__body">Shift focus between subjects in real time, with depth that rivals a dedicated lens.</p>
+        </article>
+        <article class="card reveal">
+          <div class="card__icon"><i data-lucide="sparkles"></i></div>
+          <h3 class="card__title">Smart HDR 5</h3>
+          <p class="card__body">Skin tones, skies, and shadows rendered with intelligence in every single frame.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta" id="buy">
+      <div class="cta__inner reveal">
+        <h2 class="cta__title">Lumen Pro.</h2>
+        <p class="cta__sub">Yours today, from $1,299 or $54.12/mo. for 24 months.</p>
+        <div class="cta__actions">
+          <a href="#" class="btn btn--pill btn--primary">Buy</a>
+          <a href="#specs" class="link link--arrow">See full specs <i data-lucide="arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="specs" id="specs">
+      <div class="specs__inner reveal">
+        <p class="section-eyebrow">Specs</p>
+        <h2 class="section-title">The details.</h2>
+        <dl class="specs__list">
+          <div class="specs__row"><dt>Chip</dt><dd>L18 Bionic, 6-core GPU</dd></div>
+          <div class="specs__row"><dt>Display</dt><dd>6.7&Prime; Liquid Retina XDR, 120Hz</dd></div>
+          <div class="specs__row"><dt>Camera</dt><dd>48MP Main &middot; Ultra Wide &middot; 5&times; Telephoto</dd></div>
+          <div class="specs__row"><dt>Battery</dt><dd>Up to 29 hours video playback</dd></div>
+          <div class="specs__row"><dt>Material</dt><dd>Aerospace-grade titanium</dd></div>
+        </dl>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="footer__inner">
+      <p class="footer__copy">Designed in California. A demo built on the Apple-Inspired Design System.</p>
+      <nav class="footer__links" aria-label="Footer">
+        <a href="#overview">Overview</a>
+        <a href="#specs">Specs</a>
+        <a href="#buy">Buy</a>
+      </nav>
+    </div>
+  </footer>
+
+  <script type="module" src="/js/main.js"></script>
+</body>
+</html>
